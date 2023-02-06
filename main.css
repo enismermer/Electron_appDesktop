@@ -1,0 +1,21 @@
+body {
+    background-color: #9D8686;
+}
+
+h1, section {
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+button {
+    margin-left: 20px;
+    padding: 0.7em;
+    background-color: #FF009E;
+    border-color: #FF009E;
+    border-radius: 9px;
+}

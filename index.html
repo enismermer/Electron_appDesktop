@@ -3,13 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="connect-src https://amiiboapi.com/api/amiibo/ 'self'; script-src 'self'">
+    <title>API Amiibo</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    Nous utilisons Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    et Electron <span id="electron-version"></span>.
+    <!-- --- Une démonstration ----
+    <section class="demo">
+        <h1>Hello from Electron renderer!</h1>
+        <p>👋</p>
+        <p id="info"></p>
+    </section> -->
+    <h1>Bienvenue dans Amiibo Api</h1>
+
+    <section>
+      <form action="">
+        <input type="search" placeholder="Mario, Link, Samus, Kirby, Pikachu...">
+        <button type="submit">Rechercher</button>
+      </form>
+    </section>
+
+    <!--------- API Amiibo --------->
+    <section>
+        
+        <div class="image"></div>
+        <div>
+            <p class="amiiboSeries"></p>
+            <p class="character"></p>
+            <p class="gameSeries"></p>
+            <p class="name"></p>
+            <p class="release"></p>
+        </div>
+    </section>
+  <script src="./api.js"></script>
+  <script src="./renderer.js"></script>
   </body>
 </html>
