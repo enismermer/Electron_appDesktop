@@ -13,7 +13,6 @@ let release = document.querySelector('.release');
 const container = document.getElementById('container')
 
 // Récupérer des infos de l'API
-    
         fetch(url)
             .then(res => res.json())
             .then((data) => {
@@ -28,10 +27,10 @@ const container = document.getElementById('container')
                     console.log(data["amiibo"].length);
 
                     // Dès qu'on clique sur le boutton, la fonction searchAmiibo sera appelée
-                    button.addEventListener("click",searchAmiibo)
+                    button.addEventListener("click", searchAmiibo)
 
                     // affichera les 20 premiers éléments Amiibo dès l'ouverture ou le chargement de l'appli
-                    for (i = 0; i < 20; i++) {
+                    for (i = 0; i < 30; i++) {
 
                         //console.log(data["amiibo"][i]["name"]);
                         
@@ -54,7 +53,7 @@ const container = document.getElementById('container')
                             '<p><span class="pink">Name : </span><br>'+ affichageName +'<span class="name"></span></p>' +
                             '<p><span class="pink">European Release : </span><br>'+ affichageRelease +'<span class="release"></span></p>' +
                         '</div>' +
-                    '</div>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>'
+                    '</div>'
                     }
                     // image.src = affichageImage;
                     // amiiboSeries.innerHTML = affichageAmiiboSeries;
@@ -93,7 +92,7 @@ const container = document.getElementById('container')
                                         '<p><span class="pink">Name : </span><br>' + affichageName + '<span class="name"></span></p>' +
                                         '<p><span class="pink">European Release : </span><br>' + affichageRelease + '<span class="release"></span></p>' +
                                     '</div>' +
-                                '</div>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>'
+                                '</div>'
                             }
                         }
                     }

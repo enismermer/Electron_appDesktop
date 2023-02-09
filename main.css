@@ -40,6 +40,12 @@ body {
     color: #FF00AA;
 }
 
+.yellow {
+    color: #FFDC00;
+    text-decoration: underline;
+    text-decoration-color: #FFDC00;
+}
+
 /******** alignement au centre de h1 et section  */
 h1, section {
     text-align: center;
