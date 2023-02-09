@@ -1,17 +1,58 @@
+/******** body : couleur de l'arrière-plan *********/
 body {
-    background-color: #9D8686;
+    background-color: #b7a6a6;
 }
 
+/******** icone de gauche  ********/
+.icon-left {
+    width: 7%;
+    margin-right: 4%;
+}
+
+/******** icone de droite *********/
+.icon-right {
+    width: 7%;
+    margin-left: 4%;
+}
+
+/******** définition des couleurs des lettres du titre : amiibo  ********/
+.red-letter {
+    color: #FF2727;
+}
+
+.light-green-letter {
+    color: #98F500;
+}
+
+.blue-letter {
+    color: #00AEFF;
+}
+
+.dark-green-letter {
+    color: #008000;
+}
+
+.orange-letter {
+    color: #FF8F00;
+}
+
+.pink-letter {
+    color: #FF00AA;
+}
+
+/******** alignement au centre de h1 et section  */
 h1, section {
     text-align: center;
 }
 
+/******** barre de recherche : input *********/
 input {
     width: 50%;
     padding: 0.5em;
     border-radius: 20px;
 }
 
+/******** bouton rechercher : button *********/
 button {
     margin-left: 20px;
     padding: 0.7em;
