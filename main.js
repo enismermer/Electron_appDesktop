@@ -3,6 +3,9 @@
 
 const { app, BrowserWindow } = require('electron');
 
+if(require('electron-squirrel-startup')) return;
+require('update-electron-app')()
+
 // inclure le module 'path' de Node.js au début de votre fichier
 const path = require('path');
 

@@ -59,12 +59,19 @@ input {
 }
 
 /******** bouton rechercher : button *********/
-button {
+.search {
     margin-left: 20px;
     padding: 0.7em;
     background-color: #FF009E;
     border-color: #FF009E;
     border-radius: 9px;
+}
+
+.search:hover {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #FF009E;
+    transition: 0.5s;
 }
 
 .image {
@@ -85,4 +92,22 @@ button {
 .pink {
     color: #F911C6;
     font-weight: bold;
+}
+
+
+
+
+
+
+.push-notifications {
+    padding: 0.7em 2em;
+    border-radius: 9px;
+    background-color: #000000;
+    color: white;
+}
+
+.push-notifications:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s;
 }
