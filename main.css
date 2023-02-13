@@ -87,6 +87,7 @@ input {
     padding: 10px 100px 10px 100px;
     font-size: 1.3em;
     text-align: center;
+    border-radius: 10px;
 }
 
 .pink {
