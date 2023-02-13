@@ -78,6 +78,8 @@ input {
     float: left;
     margin-top: 6%;
     margin-left: 15%;
+    box-shadow: 4px 4px 30px 40px #FFFBFB;
+    background-color: white;
 }
 
 .infos {
@@ -87,7 +89,9 @@ input {
     padding: 10px 100px 10px 100px;
     font-size: 1.3em;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-color: #ff0044;
+    box-shadow: 4px 4px 80px 30px #ff0044;
 }
 
 .pink {
