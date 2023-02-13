@@ -30,31 +30,7 @@ const container = document.getElementById('container')
                     button.addEventListener("click", searchAmiibo)
 
                     // affichera les 20 premiers éléments Amiibo dès l'ouverture ou le chargement de l'appli
-                    for (i = 0; i < 30; i++) {
-
-                        //console.log(data["amiibo"][i]["name"]);
-                        
-                    let affichageImage = data["amiibo"][i]["image"];
-                    let affichageAmiiboSeries = data["amiibo"][i]["amiiboSeries"];
-                    let affichageCharacter = data["amiibo"][i]["character"];
-                    let affichageGameSeries = data["amiibo"][i]["gameSeries"];
-                    let affichageName = data["amiibo"][i]["name"];
-                    let affichageRelease = data["amiibo"][i]["release"].eu;
-
-                    // console.log(affichageImage)
-
-                    container.innerHTML += 
-                    '<div>' +
-                        '<img src="'+ affichageImage +'" alt="figurine amiibo" class="image">' +
-                        '<div class="infos">' +
-                            '<p><span class="pink">AmiiboSeries : </span><br>'+ affichageAmiiboSeries +'<span class="amiiboSeries"></span></p>' +
-                            '<p><span class="pink">Character : </span><br>'+ affichageCharacter +'<span class="character"></span></p>' +
-                            '<p><span class="pink">GameSeries : </span><br>'+ affichageGameSeries +'<span class="gameSeries"></span></p>' +
-                            '<p><span class="pink">Name : </span><br>'+ affichageName +'<span class="name"></span></p>' +
-                            '<p><span class="pink">European Release : </span><br>'+ affichageRelease +'<span class="release"></span></p>' +
-                        '</div>' +
-                    '</div>'
-                    }
+                    
                     // image.src = affichageImage;
                     // amiiboSeries.innerHTML = affichageAmiiboSeries;
                     // character.innerHTML = affichageCharacter;
