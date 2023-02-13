@@ -30,7 +30,7 @@ module.exports = {
           owner: 'enismermer',
           name: 'Electron_appDesktop_apiAmiibo',
         },
-        authToken : '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',
+        authToken : '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',
         prerelease: false,
         draft: true,
       },
